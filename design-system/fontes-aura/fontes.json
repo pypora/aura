@@ -1,0 +1,23 @@
+[
+  {
+    "family": "Manrope",
+    "file": "manrope-variable.ttf",
+    "source": "https://raw.githubusercontent.com/google/fonts/main/ofl/manrope/Manrope%5Bwght%5D.ttf",
+    "license": "manrope-OFL.txt",
+    "bytes": 164700
+  },
+  {
+    "family": "DM Sans",
+    "file": "dmsans-variable.ttf",
+    "source": "https://raw.githubusercontent.com/google/fonts/main/ofl/dmsans/DMSans%5Bopsz%2Cwght%5D.ttf",
+    "license": "dmsans-OFL.txt",
+    "bytes": 240164
+  },
+  {
+    "family": "Inter",
+    "file": "inter-variable.ttf",
+    "source": "https://raw.githubusercontent.com/google/fonts/main/ofl/inter/Inter%5Bopsz%2Cwght%5D.ttf",
+    "license": "inter-OFL.txt",
+    "bytes": 876576
+  }
+]

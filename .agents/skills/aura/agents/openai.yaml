@@ -1,0 +1,4 @@
+interface:
+  display_name: "AURA"
+  short_description: "Aplique o AURA em interfaces web claras e escuras"
+  default_prompt: "Use $aura para aplicar o design system AURA à tela solicitada, adaptando os componentes à tecnologia do projeto."
