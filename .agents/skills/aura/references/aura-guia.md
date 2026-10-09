@@ -1,29 +1,31 @@
 # AURA — guia do sistema de design
 
-**Versão:** biblioteca 0.5 · **Plataforma:** aplicações web · **Modos:** claro e escuro
+**Versão:** biblioteca 0.5.1 · **Plataforma:** aplicações web · **Modos:** claro e escuro
 
-A referência visual do AURA é a **luz branca de neon sobre um fundo cinza suave**. A forma presente na imagem de referência não faz parte da identidade.
+A referência visual do AURA é a **luz branca de neon sobre um fundo cinza neutro suave**. A forma presente na imagem de referência não faz parte da identidade.
 
 ## Ideia central
 
 Interfaces leves e precisas, com texto em grafite no modo claro e texto claro no modo escuro, além de bastante espaço vazio. O neon branco aparece como atmosfera ou ênfase pontual nos dois temas. A inspiração no minimalismo da Apple se traduz em clareza, hierarquia e refinamento; os componentes e a assinatura visual são próprios deste sistema.
 
+**Cinza neutro:** toda a base visual é acromática, com canais **R=G=B**, nos modos claro e escuro. A regra inclui fundos, textos, bordas, foco, overlays, sombras, tabelas, carrosséis e avatares. Os cinzas variam em luminosidade; sucesso, erro e aviso preservam suas cores nos estados semânticos.
+
 ## Fundamentos
 
 | Papel | Token | Claro | Escuro | Uso |
 | --- | --- | --- | --- | --- |
-| Fundo | `--aura-canvas` | `#F6F6F5` | `#121616` | Base da página |
-| Superfície | `--aura-surface` | `#FFFFFF` | `#1B2020` | Cards, campos e menus |
-| Superfície suave | `--aura-surface-soft` | `#ECEEED` | `#252C2B` | Blocos secundários |
-| Fundo do neon | `--aura-stage` | `#D8DAD8` | `#303836` | Área cinza para exibir a luz |
-| Texto | `--aura-ink` | `#212525` | `#F0F3F1` | Títulos e texto principal |
-| Texto secundário | `--aura-ink-muted` | `#596060` | `#A9B4AF` | Legendas e apoio |
-| Ação principal | `--aura-action` | `#282D2D` | `#E6EBE8` | Fundo do botão principal |
-| Texto sobre ação | `--aura-on-action` | `#FFFFFF` | `#18201C` | Botão principal e tooltip |
-| Borda de controle | `--aura-control-line` | `#7A8580` | `#7C8A82` | Campos e escolhas |
-| Foco | `--aura-focus` | `#475B5B` | `#C5D8CE` | Indicador de teclado |
+| Fundo | `--aura-canvas` | `#F6F6F6` | `#151515` | Base da página |
+| Superfície | `--aura-surface` | `#FFFFFF` | `#1F1F1F` | Cards, campos e menus |
+| Superfície suave | `--aura-surface-soft` | `#EEEEEE` | `#2B2B2B` | Blocos secundários |
+| Fundo do neon | `--aura-stage` | `#D9D9D9` | `#363636` | Área cinza para exibir a luz |
+| Texto | `--aura-ink` | `#242424` | `#F2F2F2` | Títulos e texto principal |
+| Texto secundário | `--aura-ink-muted` | `#5F5F5F` | `#B1B1B1` | Legendas e apoio |
+| Ação principal | `--aura-action` | `#2C2C2C` | `#EAEAEA` | Fundo do botão principal |
+| Texto sobre ação | `--aura-on-action` | `#FFFFFF` | `#1E1E1E` | Botão principal e tooltip |
+| Borda de controle | `--aura-control-line` | `#828282` | `#878787` | Campos e escolhas |
+| Foco | `--aura-focus` | `#575757` | `#D3D3D3` | Indicador de teclado |
 | Núcleo da luz | `--aura-neon` | `#FFFFFF` | `#FFFFFF` | Linha e preenchimento luminosos |
-| Texto sobre neon branco | `--aura-on-neon` | `#212525` | `#212525` | Aba luminosa selecionada |
+| Texto sobre neon branco | `--aura-on-neon` | `#242424` | `#242424` | Aba luminosa selecionada |
 
 O token `--aura-action` define o fundo de ações e seleções. `--aura-graphite` acompanha esse valor como alternativa para código anterior. Use `--aura-on-action` para o texto sobre esse fundo.
 
@@ -79,7 +81,7 @@ O documento emite `aura:themechange`, com o tema em `event.detail.theme`. Veja o
 ## Regras de composição
 
 1. Comece cada tela com uma hierarquia clara: título, descrição breve, ação principal e conteúdo.
-2. Use superfícies do tema e bordas sutis para organizar. Sombras ficam reservadas a elementos elevados.
+2. Use superfícies do tema e bordas sutis para organizar, com cinzas neutros (**R=G=B**) em toda a base. Sombras ficam reservadas a elementos elevados.
 3. A luz branca precisa de um fundo cinza perceptível. Use o efeito em uma região de destaque por vista ou menos.
 4. Mantenha texto e controles legíveis sem depender do brilho. O neon é decorativo.
 5. Não associe a identidade a uma forma geométrica fixa; ela pode aparecer como feixe, halo ou borda sutil.
@@ -104,7 +106,7 @@ O documento emite `aura:themechange`, com o tema em `event.detail.theme`. Veja o
 
 Selects e seletores de data/hora preservam os popups nativos; a aparência desses popups pode variar conforme o navegador e o sistema operacional. Os campos visíveis usam os tokens AURA.
 
-Para controles, use `--aura-control-line` (`#7A8580` no claro e `#7C8A82` no escuro). O token `--aura-line` permanece adequado para divisórias e bordas de superfícies. Rótulos, texto de erro e foco devem permanecer visíveis. O brilho é decorativo e não comunica o estado sozinho.
+Para controles, use `--aura-control-line` (`#828282` no claro e `#878787` no escuro). O token `--aura-line` permanece adequado para divisórias e bordas de superfícies. Rótulos, texto de erro e foco devem permanecer visíveis. O brilho é decorativo e não comunica o estado sozinho.
 
 ## Variações de neon
 

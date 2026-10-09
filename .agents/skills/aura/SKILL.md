@@ -1,12 +1,12 @@
 ---
 name: aura
-description: "Aplicar o design system AURA a interfaces web, componentes e telas existentes, com Manrope, light/dark mode e neon branco minimalista. Use quando o usuário escolher a identidade AURA."
+description: "Aplicar o design system AURA a interfaces web, componentes e telas existentes, com Manrope, cinzas neutros, light/dark mode e neon branco minimalista. Use quando o usuário escolher a identidade AURA."
 license: MIT
 ---
 
 # AURA
 
-Implemente a identidade AURA na tela ou no componente solicitado. Preserve os fluxos e as funcionalidades do produto, adaptando o sistema à tecnologia do projeto. Esta skill contém a biblioteca AURA **0.5.0** e funciona sem depender do chat em que ela foi criada.
+Implemente a identidade AURA na tela ou no componente solicitado. Preserve os fluxos e as funcionalidades do produto, adaptando o sistema à tecnologia do projeto. Esta skill contém a biblioteca AURA **0.5.1** e funciona sem depender do chat em que ela foi criada.
 
 ## Fontes de referência
 
@@ -29,7 +29,8 @@ O CSS fornecido inclui regras globais para `html`, `body` e controles. Em uma mi
 
 ## Decisões visuais do AURA
 
-- **Identidade:** luz branca sobre cinza, minimalismo, espaço livre e hierarquia clara. A assinatura vem da luz; nenhuma forma geométrica especial é obrigatória.
+- **Identidade:** luz branca sobre cinza neutro, minimalismo, espaço livre e hierarquia clara. A assinatura vem da luz; nenhuma forma geométrica especial é obrigatória.
+- **Base acromática:** use cinzas com **R=G=B** nos dois temas. Fundos, textos, bordas, foco, overlays, sombras, tabelas, carrosséis e avatares seguem essa regra. Preserve as cores de sucesso, erro e aviso exclusivamente nos estados semânticos. Ao ampliar a paleta base, altere a luminosidade mantendo os três canais iguais.
 - **Fonte oficial:** Manrope em títulos, textos e componentes. Use os pesos **400 / 500 / 600 / 700**, seguindo seus papéis no guia.
 - **Tipografia:** corpo **16 px**, controles **14 px**, ajuda **12 px** com base de 16 px. Preserve os tamanhos em `rem` e a escala de títulos definida nos tokens.
 - **Controles:** altura mínima padrão **48 px** e compacta **44 px**. Textareas, seleções múltiplas e escolhas com várias linhas crescem com o conteúdo. Ícones comuns usam **20 px**.

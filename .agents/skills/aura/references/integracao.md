@@ -1,5 +1,7 @@
 # Integração do AURA em aplicações web
 
+**Versão de referência:** AURA 0.5.1.
+
 O pacote de referência está em `../assets/design-system/`, relativo a este arquivo. Os estilos e assets usados no produto devem fazer parte do próprio projeto; a aplicação não deve depender do caminho pessoal onde a skill está instalada.
 
 ## HTML com JavaScript
@@ -49,6 +51,10 @@ Em um projeto com gerenciador de tema próprio, mantenha esse gerenciador como r
 
 `aura.css` aplica fonte e cores no `html`, medidas no `body`, `box-sizing` global e herança de fonte nos controles. Avalie essas regras antes de importá-lo em um produto existente. Para alterar uma tela isolada, adapte os tokens e regras ao contêiner da tela, ou use a infraestrutura de estilos do projeto. O seletor de dark deve acompanhar o mesmo escopo.
 
-Os mapas `themes.light` e `themes.dark` em `aura-tokens.json` contêm nomes de variáveis CSS e valores, inclusive URLs de SVG e sombras. Preserve os valores completos; o campo `color` no topo registra a paleta clara original, enquanto os mapas de tema contêm as cores e efeitos por modo.
+Os mapas `themes.light` e `themes.dark` em `aura-tokens.json` contêm nomes de variáveis CSS e valores, inclusive URLs de SVG e sombras. Preserve os valores completos; o campo `color` no topo registra a paleta clara padrão, enquanto os mapas de tema contêm as cores e efeitos por modo.
+
+A base dos dois temas usa cinzas neutros, com **R=G=B**, incluindo fundos, textos, bordas, foco, overlays, sombras, tabelas, carrosséis e avatares. Preserve essa neutralidade ao mapear os tokens para outra biblioteca: as variações da base alteram apenas a luminosidade e a opacidade. As cores de sucesso, erro e aviso pertencem aos estados semânticos.
+
+Os nomes `--aura-avatar-warm` e `--aura-avatar-cool` são mantidos por compatibilidade e representam níveis diferentes de luminosidade em cinza neutro.
 
 Atualizações podem ser comparadas com a versão local do AURA. Preserve alterações do produto e distribua a nova versão de forma deliberada, em vez de sobrescrever arquivos customizados durante uma tarefa de tela.

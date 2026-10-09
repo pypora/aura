@@ -1,8 +1,8 @@
 # AURA
 
-Design system da **Pypora** para aplicações web: neon branco sobre cinza, Manrope e interfaces minimalistas nos modos claro e escuro.
+Design system da **Pypora** para aplicações web: neon branco sobre cinza neutro, Manrope e interfaces minimalistas nos modos claro e escuro.
 
-O repositório reúne a biblioteca **0.5.0**, um catálogo interativo e uma skill para orientar agentes de IA a aplicar a mesma identidade em diferentes projetos.
+O repositório reúne a biblioteca **0.5.1**, um catálogo interativo e uma skill para orientar agentes de IA a aplicar a mesma identidade em diferentes projetos.
 
 ## O que vem no pacote
 
@@ -93,6 +93,7 @@ Para outro agente com suporte ao padrão Agent Skills, instale a pasta `aura` co
 - Raios por função: 8 / 12 / 16 / 24 px; exceções para cápsulas e círculos.
 - Espaçamento em múltiplos de 4 px e tipografia em `rem`.
 - Geometria compartilhada entre claro e escuro.
+- Base acromática nos dois temas: cinzas com **R=G=B** em fundos, textos, bordas, foco, overlays, sombras, tabelas, carrosséis e avatares. As cores de sucesso, erro e aviso são reservadas aos estados semânticos.
 - Neon branco pontual, com halos mais suaves no modo escuro.
 
 Use os tokens existentes para expandir o catálogo. A forma da luz pode variar; a identidade não depende de uma forma geométrica fixa.

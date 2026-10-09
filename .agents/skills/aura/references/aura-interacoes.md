@@ -1,6 +1,6 @@
 # AURA — interações web
 
-**Versão:** biblioteca 0.5 · **Modos:** claro e escuro
+**Versão:** biblioteca 0.5.1 · **Modos:** claro e escuro
 
 Use os estilos e o script em conjunto. O JavaScript funciona sem frameworks e inicializa os componentes quando o documento está pronto.
 
